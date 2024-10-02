@@ -1,0 +1,26 @@
+# Imprimir mensaje
+print("Hola, como estan")
+
+# Operaciones matemáticas básicas con tres variables
+x = 15
+y = 30
+z = 45
+
+# Suma
+suma = x + y + z
+print(f"La suma de {x}, {y} y {z} es: {suma}")
+
+# Resta (solo restar entre los dos primeros valores)
+resta = x - y - z
+print(f"La resta de {x} menos {y} y menos {z} es: {resta}")
+
+# Multiplicación
+multiplicacion = x * y * z
+print(f"La multiplicación de {x}, {y} y {z} es: {multiplicacion}")
+
+# División (primero dividir x entre y, luego dividir ese resultado entre z)
+if y != 0 and z != 0:  # Comprobar que no hay división entre cero
+    division = (x / y) / z
+    print(f"La división de {x} entre {y} y luego entre {z} es: {division}")
+else:
+    print("No se puede dividir entre cero")
