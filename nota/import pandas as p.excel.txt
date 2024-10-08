@@ -1,0 +1,24 @@
+import pandas as pd
+
+# Crear un DataFrame con la fórmula de Poisson para el cálculo pedido
+data = {'Llamadas (k)': [2],
+        'Promedio de llamadas (λ)': [3],
+        'Probabilidad': [None]}
+
+# Calcular la probabilidad usando la fórmula de Poisson
+# P(k; λ) = (λ^k * e^(-λ)) / k!
+from math import exp, factorial
+
+lambda_val = 3
+k_val = 2
+poisson_prob = (lambda_val**k_val * exp(-lambda_val)) / factorial(k_val)
+data['Probabilidad'][0] = poisson_prob
+
+# Crear el DataFrame para exportar a Excel
+df = pd.DataFrame(data)
+
+# Guardar el archivo Excel
+file_path = "/mnt/data/poisson_distribution_calculation.xlsx"
+df.to_excel(file_path, index=False)
+
+file_path
