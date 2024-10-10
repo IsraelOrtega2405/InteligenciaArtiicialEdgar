@@ -13,7 +13,7 @@ else:
     print("Eres menor de edad")
 
 if edad >= 25 and edad < 30:
-    print("Estás en la peor etapa de tu vida")
+    print("ahora le debes al SAT pelate carnal")
 elif edad >= 30 and edad < 40:
     print("adios a la libertad")
 elif edad >= 40 and edad < 50:
